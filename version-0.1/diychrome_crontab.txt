@@ -1,0 +1,1 @@
+0,15,30,45 * * * * /home/Library/scripts/diychrome_cron.sh
