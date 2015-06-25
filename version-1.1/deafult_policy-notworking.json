@@ -1,5 +1,5 @@
 {
-  "RestrictSigninToPattern": ["^[\w\-\.\+]+\@\b(?:student)\b\.\bsscps\b\.\borg\b$"],
+  "RestrictSigninToPattern": [""],
   "ForceMaximizeOnFirstRun": true,
   "ForceEphemeralProfiles": true
 }
