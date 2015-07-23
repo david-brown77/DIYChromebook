@@ -38,7 +38,8 @@ apt-get -y install kubuntu-restricted-extras
 # fix network interfaces so network-manager can manage it
 mv /etc/network/interfaces /etc/network/interfaces.orig
 cd /etc/network/
-wget https://raw.githubusercontent.com/SSCPS/TechTools-Linux/master/diychromebook2/interfaces
+# CHANGE:  be sure to update to correct repository
+wget https://raw.githubusercontent.com/rdegennaro/DIYChromebook/master/version-1.1/interfaces
 #
 # install tools
 # setup repository for webmin
