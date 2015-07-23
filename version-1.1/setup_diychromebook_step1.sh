@@ -35,6 +35,11 @@ apt-get -y install ubuntu-wallpapers kde-wallpapers kde-wallpapers-default kdewa
 apt-get -y install kscreensaver screensaver-default-images
 apt-get -y install kubuntu-restricted-extras
 #
+# fix network interfaces so network-manager can manage it
+mv /etc/network/interfaces /etc/network/interfaces.orig
+cd /etc/network/
+wget https://raw.githubusercontent.com/SSCPS/TechTools-Linux/master/diychromebook2/interfaces
+#
 # install tools
 # setup repository for webmin
 echo "" >> /etc/apt/sources.list
