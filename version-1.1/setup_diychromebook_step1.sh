@@ -1,4 +1,5 @@
 #!/bin/bash
+# short URL = https://goo.gl/LTQvgk, change it for (after) push to main SSCPS 
 
 # ToDo / Remember
 # make /etc/opt/chrome/policies/managed
