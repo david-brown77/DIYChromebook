@@ -12,11 +12,10 @@
 
 # work in progress, use at your own risk
 # assumptions:
-#   1.  to be used on Dell D620's & Dell D820's
-#   2.  assumes its being run as root
-#   3.  assumes that the ubuntu-server distro is being used
+#   1.  assumes its being run as root
+#   2.  only tested from kubuntu 14.04 and ubuntu server 14.04 installs
+#   3.  
 # if you are behind a webfilter and need weblogin, try w3m
-# quick link to master copy = http://goo.gl/eAgFfn
 #
 # setup temp directory for rest of script
 mkdir -p /root/setup
