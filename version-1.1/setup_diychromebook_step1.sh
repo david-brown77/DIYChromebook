@@ -67,7 +67,7 @@ update-alternatives --set default.plymouth /lib/plymouth/themes/edubuntu-logo/ed
 update-grub
 update-initramfs -u
 #
-# install Google Chrome & download/install policy (policy part is BUSTED because of BUG in chrome)
+# install Google Chrome & download/install policy
 cd /root/setup
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 dpkg -i google-chrome*.deb
