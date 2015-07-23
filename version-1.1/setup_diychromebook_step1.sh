@@ -3,6 +3,7 @@
 
 # ToDo / Remember
 # check to see if code setting googleuser user to automatically login works with KDE
+# disable akonadi & nepomuk
 # set login screen background
 # modify panel, maybe in step 2 (after create home directory?)
 # find better way to add webmin repositoryy so that dups aren't added if run twice
@@ -27,7 +28,9 @@ aptitude -y --full-resolver safe-upgrade
 #
 # install DE & clean out unnecessary apps for DIYChromebook
 apt-get -y install kubuntu-desktop #needed only if use ubuntu server (certain iMacs, older machines)
-apt-get -y remove kpat ktorrent akregator kopete quassel firefox 
+apt-get -y remove kpat k3b kaddressbook kmail kontact korganizer krdc knotes
+apt-get -y remove firefox libreoffice* skanlite amarok* dragonplayer
+apt-get -y remove kde-telepathy ktorrent akregator kopete quassel samba-common smbclient
 apt-get -y install ubuntu-wallpapers kde-wallpapers kde-wallpapers-default kdewallpapers peace-wallpapers tropic-wallpapers xubuntu-wallpapers
 apt-get -y install kscreensaver screensaver-default-images
 apt-get -y install kubuntu-restricted-extras
