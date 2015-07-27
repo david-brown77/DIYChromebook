@@ -14,40 +14,52 @@ generic update/manage project to this dedicated project.
 
 All copyrights reserved beyond GPL v3.0.
 
-# ToDo
-1. Get & store icon for Google Chrome Launcher, put in panel.
-2. Can we have Ephemeral Profiles when close all Google Chrome, but not logged out?  Maybe if keep it loaded in background.  Need to check.
-3. Separate out settings for specific user from whole machine?
+# Status / Overview
+1. Version 1.1 is currently being worked on. Right now, concentrating on Kubuntu.
+2. Ephemeral profiles would be nice, but Chrome crashes alot with this setting especially with starting after clearing a profile.
+3. ?
+
+# ToDo / Remember
+1. Finish with Chrome policies, including user vs. machine (differentiate between generic & dedicated machines).
+2. Separate out settings for specific user from whole machine?
+3. Check to see if code setting googleuser user to automatically login works with KDE.
+4. Disable akonadi & nepomuk (with script).
+5. Setup panel with script?
+6. Set login screen background.
+7. Get & store icon for Google Chrome Launcher, put in panel as well.
+8. Find better way to add webmin repositoryy so that dups aren't added if run twice
 
 
 # Update
 
 1. Log into system as "sscpslocal"
-2. In LX Terminal, sudo to root.
+2. In terminal (Konsole or LX Terminal), sudo to root.
 3. Type "/home/System/scripts/update_bruteforce.sh"
 
 # Install/Initial Setup  [NOT DONE]
 [[This process is being "tweaked" & formatted.]]
 
-1. Install Ubuntu Server from USB & reboot.  
+1. Install Ubuntu Server from CD or USB & reboot.  
   * (only if non-Server 14.04+ ) For D620/D820, use "xforcevesa" when booting.
   * Setup partitions as:
     * /dev/sda1 = swap (4GB)
-    * /dev/sda2 = / (10GB, format ext3, label root)
-  * computer name = D620-DIYCHROME or D820-DIYCHROME (which ever is appropriate)
+    * /dev/sda2 = / (8GB, format ext4, label root)
+  * computer name = TEMPLATE-DIYCHROME-D820 or TEMPLATE-DIYCHROME-D820 (which ever is appropriate)
   * UID/PWD = sscpslocal/<usual local admin pwd>
 2. Do base installation:
   1. login as sscpslocal & sudo to root.
   2. Type in following commands:
-    1. mkdir -p /home/System/scripts
-    2. cd /home/System/scripts
-    3. wget http://goo.gl/eAgFfn
-    4. mv TKB3Bg setup_new_diychromebook2.sh
-    5. chmod a+x *.sh
-    6. Edit setup_new_diychromebook2_step1.sh and change the default password for "googleuser" to something appropriate.
-    7. /home/System/scripts/setup_new_diychromebook2_step1.sh
+    1. cd /root
+    2. https://goo.gl/LTQvgk
+    3. mv LTQvgk setup_diychromebook_step1.sh
+    4. chmod a+x *.sh
+    6. Edit setup_diychromebook_step1.sh and change the default password for "googleuser" to something appropriate.
+    7. /root/setup_new_diychromebook2_step1.sh
   3. Look for questions as the script can't assume "yes" on some questions.
   4. Reboot
+3. ????
+
+# Old Instructions
 3. Check to make sure automatically logged in as "Google User".
 4. Start Google Chrome and check "Automatically send usage statistics and crash reports to Google".
 5. DO NOT sign into Google Chrome.
