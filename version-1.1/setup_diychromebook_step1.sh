@@ -58,8 +58,8 @@ cd /home/System/scripts/
 wget https://github.com/rdegennaro/DIYChromebook/blob/master/version-1.1/update_bruteforce.sh
 chmod a+x /home/System/scripts/update_bruteforce.sh
 #
-# boot splash  theme, need to be after lubuntu-desktop because that installs its own
-# might require file edits before in /etc/default/grub, should check what lubuntu-desktop does to it
+# boot splash  theme
+# need to be after desktop because that installs its own
 apt-get -y install plymouth-theme-edubuntu
 sed -i 's/GRUB_CMDLINE_LINUX_DEFAULT=""/GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"/g' /etc/default/grub
 update-alternatives --set default.plymouth /lib/plymouth/themes/edubuntu-logo/edubuntu-logo.plymouth
