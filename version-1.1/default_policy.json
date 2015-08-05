@@ -1,6 +1,4 @@
 {
-  "DriveDisabled": true,
-  "DriveDisabledOverCellular": true,
   "BrowserAddPersonEnabled": false,
   "BrowserGuestModeEnabled": false,
   "SupervisedUsersEnabled": false,
@@ -9,6 +7,7 @@
   "PasswordManagerEnabled": false,
   "AutoFillEnabled": false,
   "PopupsAllowedForUrls": ["[*.]plusportals.com", "[*.]cloudapp.net", "[*.]studyisland.com"],
+  "ForceYouTubeSafetyMode": true,
   "ForceGoogleSafeSearch": true,
   "SafeBrowsingEnabled": true,
   "IncognitoModeAvailability": 1,
