@@ -67,6 +67,26 @@ update-alternatives --set default.plymouth /lib/plymouth/themes/edubuntu-logo/ed
 update-grub
 update-initramfs -u
 #
+# get SSCPS backgrounds
+mkdir -p /usr/share/wallpapers/SSCPS-Flags/contents/images
+mkdir -p /usr/share/wallpapers/SSCPS-Folders/contents/images
+mkdir -p /usr/share/wallpapers/SSCPS-Smiles/contents/images
+mkdir -p /usr/share/wallpapers/SSCPS-Violinist/contents/images
+cd /usr/share/wallpapers/SSCPS-Flags/contents/images
+wget https://raw.githubusercontent.com/SSCPS/desktop-backgrounds/master/backgrounds/SSCPSFlags-1366x768.png
+wget https://raw.githubusercontent.com/SSCPS/desktop-backgrounds/master/backgrounds/SSCPSFlags-1280-800.png
+wget https://raw.githubusercontent.com/SSCPS/desktop-backgrounds/master/backgrounds/SSCPSFlags-1440-900.png
+wget https://raw.githubusercontent.com/SSCPS/desktop-backgrounds/master/backgrounds/SSCPSFlags-1920x1200.png
+cd /usr/share/wallpapers/SSCPS-Folders/contents/images
+wget https://raw.githubusercontent.com/SSCPS/desktop-backgrounds/master/backgrounds/SSCPSFolders-1366x768.png
+wget https://raw.githubusercontent.com/SSCPS/desktop-backgrounds/master/backgrounds/SSCPSFolders-1280-800.png
+wget https://raw.githubusercontent.com/SSCPS/desktop-backgrounds/master/backgrounds/SSCPSFolders-1440-900.png
+wget https://raw.githubusercontent.com/SSCPS/desktop-backgrounds/master/backgrounds/SSCPSFolders-1920x1200.png
+chown -R root:root /usr/share/wallpapers/SSCPS*
+chmod -R a-rwx /usr/share/wallpapers/SSCPS*
+chmod -R a+rX /usr/share/wallpapers/SSCPS*
+chmod -R o+w /usr/share/wallpapers/SSCPS*
+#
 # install Google Chrome & download/install policy
 cd /root/setup
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
