@@ -51,7 +51,7 @@ cd /root/setup
 wget http://www.webmin.com/jcameron-key.asc
 apt-key add /root/setup/jcameron-key.asc
 apt-get update
-apt-get -y install webmin git git-doc mc mutt
+apt-get -y install webmin git git-doc mc mutt unzip
 apt-get -f -y install
 # download script for "unattended" updating 
 cd /home/System/scripts/
@@ -67,21 +67,19 @@ update-alternatives --set default.plymouth /lib/plymouth/themes/edubuntu-logo/ed
 update-grub
 update-initramfs -u
 #
-# get SSCPS backgrounds
-mkdir -p /usr/share/wallpapers/SSCPS-Flags/contents/images
-mkdir -p /usr/share/wallpapers/SSCPS-Folders/contents/images
-mkdir -p /usr/share/wallpapers/SSCPS-Smiles/contents/images
-mkdir -p /usr/share/wallpapers/SSCPS-Violinist/contents/images
-cd /usr/share/wallpapers/SSCPS-Flags/contents/images
-wget https://raw.githubusercontent.com/SSCPS/desktop-backgrounds/master/backgrounds/SSCPSFlags-1366x768.png
-wget https://raw.githubusercontent.com/SSCPS/desktop-backgrounds/master/backgrounds/SSCPSFlags-1280-800.png
-wget https://raw.githubusercontent.com/SSCPS/desktop-backgrounds/master/backgrounds/SSCPSFlags-1440-900.png
-wget https://raw.githubusercontent.com/SSCPS/desktop-backgrounds/master/backgrounds/SSCPSFlags-1920x1200.png
-cd /usr/share/wallpapers/SSCPS-Folders/contents/images
-wget https://raw.githubusercontent.com/SSCPS/desktop-backgrounds/master/backgrounds/SSCPSFolders-1366x768.png
-wget https://raw.githubusercontent.com/SSCPS/desktop-backgrounds/master/backgrounds/SSCPSFolders-1280-800.png
-wget https://raw.githubusercontent.com/SSCPS/desktop-backgrounds/master/backgrounds/SSCPSFolders-1440-900.png
-wget https://raw.githubusercontent.com/SSCPS/desktop-backgrounds/master/backgrounds/SSCPSFolders-1920x1200.png
+# get SSCPS wallpapers
+mkdir -p /root/setup/wallpapers
+cd /root/setup/wallpapers
+wget https://github.com/SSCPS/desktop-wallpapers/raw/master/wallpapers/SSCPS-Flags.zip
+unzip /root/setup/wallpapers/SSCPS-Flags.zip -d /root/setup/wallpapers/
+wget https://github.com/SSCPS/desktop-wallpapers/raw/master/wallpapers/SSCPS-Folders.zip
+unzip /root/setup/wallpapers/SSCPS-Folders.zip -d /root/setup/wallpapers/
+wget https://github.com/SSCPS/desktop-wallpapers/raw/master/wallpapers/SSCPS-Smiles.zip
+unzip /root/setup/wallpapers/SSCPS-Smiles.zip -d /root/setup/wallpapers/
+wget https://github.com/SSCPS/desktop-wallpapers/raw/master/wallpapers/SSCPS-Violinist.zip
+unzip /root/setup/wallpapers/SSCPS-Violinist.zip -d /root/setup/wallpapers/
+rm /root/setup/wallpapers/SSCPS-*.zip
+mv /root/setup/wallpapers/SSCPS-* /usr/share/wallpapers/
 chown -R root:root /usr/share/wallpapers/SSCPS*
 chmod -R a-rwx /usr/share/wallpapers/SSCPS*
 chmod -R a+rX /usr/share/wallpapers/SSCPS*
