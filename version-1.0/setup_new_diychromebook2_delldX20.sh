@@ -4,7 +4,7 @@
 #   2.  assumes its being run as root
 #   3.  assumes that the ubuntu-server distro is being used
 # if you are behind a webfilter and need weblogin, try w3m
-# quick link to master copy = http://goo.gl/eAgFfn
+# quick link to master copy = https://goo.gl/BpZwnK
 #
 # setup temp directory for rest of script
 mkdir -p /root/setup
