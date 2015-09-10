@@ -54,7 +54,7 @@ Plugin {
     type = launchbar
     Config {
         Button {
-            id=/usr/share/applications/google-chrome.desktop
+            id=/usr/share/applications/chromium-browser.desktop
         }
         Button {
             id=/usr/share/applications/pcmanfm.desktop
