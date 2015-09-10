@@ -1,4 +1,10 @@
 {
+  "RestrictSigninToPattern": "^.+?(@student.sscps.org|@sscps.org)$",
+  "PasswordManagerEnabled": false,
+  "PasswordManagerAllowShowPasswords": false,
+  "RemoteAccessHostDomain": "noone.sscps.org",
+  "DisableSafeBrowsingProceedAnyway": true,
+  "AutoFillEnabled": false,
   "BrowserAddPersonEnabled": false,
   "BrowserGuestModeEnabled": false,
   "SupervisedUsersEnabled": false,
