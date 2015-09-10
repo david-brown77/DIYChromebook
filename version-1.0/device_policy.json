@@ -1,1 +1,24 @@
-
+{
+  "BrowserAddPersonEnabled": false,
+  "BrowserGuestModeEnabled": false,
+  "SupervisedUsersEnabled": false,
+  "SupervisedUserCreationEnabled": false,
+  "PasswordManagerAllowShowPasswords": false,
+  "PasswordManagerEnabled": false,
+  "AutoFillEnabled": false,
+  "PopupsAllowedForUrls": ["[*.]plusportals.com", "[*.]cloudapp.net", "[*.]studyisland.com"],
+  "ForceYouTubeSafetyMode": true,
+  "ForceGoogleSafeSearch": true,
+  "SafeBrowsingEnabled": true,
+  "IncognitoModeAvailability": 1,
+  "DefaultCookiesSetting": 4,
+  "BackgroundModeEnabled": false,
+  "ShowHomeButton": true,
+  "ShowAppsShortcutInBookmarkBar": true,
+  "BookmarkBarEnabled": true,
+  "RestoreOnStartupURLs": ["http://sscps.org/google_redirect"],
+  "RestoreOnStartup": 4,
+  "HomepageIsNewTabPage": false,
+  "HomepageLocation": "sscps.org",
+  "MetricsReportingEnabled": true
+}
