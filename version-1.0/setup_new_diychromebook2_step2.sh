@@ -20,7 +20,7 @@ chown -R root:root /home/googleuser/.config/google-chrome-template
 #
 # get & setup script for cleanup of googleuser Google Chrome profile
 cd /home/System/scripts/
-wget https://raw.githubusercontent.com/SSCPS/TechTools-Linux/master/diychromebook2/googleuser_cleanup.sh
+wget https://raw.githubusercontent.com/rdegennaro/DIYChromebook/master/version-1.0/googleuser_cleanup.sh
 chmod a+x /home/System/scripts/googleuser_cleanup.sh
 mkdir -p /home/googleuser/.googleuser-aging/logs
 #
