@@ -125,7 +125,7 @@ apt-get -y install chromium pepperflashplugin-nonfree
 mkdir -p /etc/opt/chrome/policies/managed
 cd /etc/opt/chrome/policies/managed/
 # CHANGE:  be sure to update to correct repository
-wget https://raw.githubusercontent.com/rdegennaro/DIYChromebook/master/version-1.0/default_policy.json
+https://raw.githubusercontent.com/rdegennaro/DIYChromebook/master/version-1.0/device_policy.json
 #
 # clean up everything
 apt-get -y autoremove
