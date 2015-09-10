@@ -26,7 +26,7 @@ apt-get -y remove vim vim.tiny vim-common wvdial xfburn xmms2 xpad xterm yelp ze
 #
 # release eth0 from server-based management, only after network-manager is installed
 cd /root/setup
-wget https://raw.githubusercontent.com/SSCPS/TechTools-Linux/master/diychromebook2/interfaces
+wget https://raw.githubusercontent.com/rdegennaro/DIYChromebook/master/version-1.0/interfaces
 mv /etc/network/interfaces /etc/network/interfaces.orig
 cp /root/setup/interfaces /etc/network/interfaces
 #
@@ -47,9 +47,9 @@ apt-get -y install mc mutt git git-doc oracle-java7-installer xmlstarlet webmin
 apt-get -f -y install
 # download script for "unattended" updating 
 cd /home/System/scripts/
-wget https://raw.githubusercontent.com/SSCPS/TechTools-Linux/master/update_bruteforce.sh
+wget https://raw.githubusercontent.com/rdegennaro/DIYChromebook/master/version-1.0/update_bruteforce.sh
 chmod a+x /home/System/scripts/update_bruteforce.sh
-wget https://raw.githubusercontent.com/SSCPS/TechTools-Linux/master/diychromebook2/setup_new_diychromebook2_step2.sh
+wget https://raw.githubusercontent.com/rdegennaro/DIYChromebook/master/version-1.0/setup_new_diychromebook2_step2.sh
 chmod a+x /home/System/scripts/setup_new_diychromebook2_step2.sh
 #
 # setup login stuff (theme & sessions)
@@ -69,11 +69,11 @@ mkdir -p /etc/skel/.config/lxpanel/LXDE/panels/
 mkdir -p /etc/skel/.config/lxpanel/default/panels/
 mkdir -p /etc/skel/.config/lxpanel/Lubuntu/panels/
 cd /etc/skel/.config/lxpanel/LXDE/panels/
-wget https://raw.githubusercontent.com/SSCPS/TechTools-Linux/master/diychromebook2/panel
+wget https://raw.githubusercontent.com/rdegennaro/DIYChromebook/master/version-1.0/panel
 cd /etc/skel/.config/lxpanel/default/panels/
-wget https://raw.githubusercontent.com/SSCPS/TechTools-Linux/master/diychromebook2/panel
+wget https://raw.githubusercontent.com/rdegennaro/DIYChromebook/master/version-1.0/panel
 cd /etc/skel/.config/lxpanel/Lubuntu/panels/
-wget https://raw.githubusercontent.com/SSCPS/TechTools-Linux/master/diychromebook2/panel
+wget https://raw.githubusercontent.com/rdegennaro/DIYChromebook/master/version-1.0/panel
 # change default background - probably don't need the first two since copying default panel from github
 sed -i 's#backgroundfile=/usr/share/lxpanel/images/background.png#backgroundfile=/usr/share/backgrounds/edubuntu-getexcited.jpg#g' /usr/share/lxpanel/profile/default/panels/panel
 sed -i 's#backgroundfile=/usr/share/lxpanel/images/background.png#backgroundfile=/usr/share/backgrounds/edubuntu-getexcited.jpg#g' /usr/share/lxpanel/profile/LXDE/panels/panel
@@ -125,7 +125,7 @@ apt-get -y install chromium pepperflashplugin-nonfree
 mkdir -p /etc/opt/chrome/policies/managed
 cd /etc/opt/chrome/policies/managed/
 # CHANGE:  be sure to update to correct repository
-https://raw.githubusercontent.com/rdegennaro/DIYChromebook/master/version-1.0/device_policy.json
+wget https://raw.githubusercontent.com/rdegennaro/DIYChromebook/master/version-1.0/device_policy.json
 #
 # clean up everything
 apt-get -y autoremove
