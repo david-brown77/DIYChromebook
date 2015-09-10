@@ -112,13 +112,20 @@ update-grub
 update-initramfs -u
 #
 # install Google Chrome & download/install policy (policy part is BUSTED because of BUG in chrome)
-cd /root/setup
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-dpkg -i google-chrome*.deb
-apt-get -f -y install
+#cd /root/setup
+#wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+#dpkg -i google-chrome*.deb
+#apt-get -f -y install
 #mkdir -p /etc/opt/chrome/policies/managed
 #cd /etc/opt/chrome/policies/managed/
 #wget https://raw.githubusercontent.com/SSCPS/TechTools-Linux/master/diychromebook2/device_policy.json
+#
+# install Chromium, flash & policies; not using Google Chrome because it freezes on some older laptops
+apt-get -y install chromium pepperflashplugin-nonfree
+mkdir -p /etc/opt/chrome/policies/managed
+cd /etc/opt/chrome/policies/managed/
+# CHANGE:  be sure to update to correct repository
+wget https://raw.githubusercontent.com/rdegennaro/DIYChromebook/master/version-1.0/default_policy.json
 #
 # clean up everything
 apt-get -y autoremove
