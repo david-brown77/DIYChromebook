@@ -29,10 +29,10 @@
   3. Look for questions as the script can't assume "yes" on some questions.
   4. Reboot
 3. Check to make sure automatically logged in as "Google User".
-4. Start Google Chrome and check "Automatically send usage statistics and crash reports to Google".
-5. DO NOT sign into Google Chrome.
-6. Maximize the Google Chrome window.
-7. Enabled web-based Google Chrome login:
+4. Start Chromium and check "Automatically send usage statistics and crash reports to Google".
+5. DO NOT sign into Chromium.
+6. Maximize the Chromium window.
+7. (DEPRACTED in current version of Chromium) Enabled web-based Google Chrome login:
   1. Enter "chrome://flags" in address bar.
   2. Find & enable "Enable pure web-based sign-in flows".
   3. Restart Google Chrome if asked.
