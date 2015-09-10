@@ -8,6 +8,7 @@
 #
 # setup temp directory for rest of script
 mkdir -p /root/setup
+mkdir -p /home/System/scripts
 #
 # should do all updates first
 apt-get update
