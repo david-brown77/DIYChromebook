@@ -121,7 +121,7 @@ update-initramfs -u
 #wget https://raw.githubusercontent.com/SSCPS/TechTools-Linux/master/diychromebook2/device_policy.json
 #
 # install Chromium, flash & policies; not using Google Chrome because it freezes on some older laptops
-apt-get -y install chromium pepperflashplugin-nonfree
+apt-get -y install chromium-browser pepperflashplugin-nonfree
 mkdir -p /etc/opt/chrome/policies/managed
 cd /etc/opt/chrome/policies/managed/
 # CHANGE:  be sure to update to correct repository
