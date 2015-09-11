@@ -51,13 +51,16 @@
   9. Clear browser history "from beginning of time." 
 9. Close Google Chrome, but DO NOT log-out.
 10. Open PcManFM, from bookmarks on side, remove all but Downloads
-11. Create template Google Chrome profile:
+11. Run second stage of commands:
   1. With PCManFM still open.
   2. Tools -> "Open Current Folder in Terminal".
   3. In terminal window, type "su sscpslocal".
   4. In terminal window, type "sudo -s".
   5. /home/System/scripts/setup_new_diychromebook2_step2.sh
-12. Logout & remove network cable.  
-13. Login as sscpslocal & connect to WiFi SSIDs.  Be sure they are set as "System".
-14. Goto https://localhost:10000, login as sscpslocal & update webmin.
-15. Reboot & check that it all works (HINT, Google Chrome's history should be empty).
+12. Fix up new windows:
+  1. nano -w /home/googleuser/.config/openbox/lubuntu-rc.xml
+  2. uncomment node at bottom that is <maximized>, include <application type="normal">
+13. Logout & remove network cable.  
+14. Login as sscpslocal & connect to WiFi SSIDs.  Be sure they are set as "System".
+15. Goto https://localhost:10000, login as sscpslocal & update webmin.
+16. Reboot & check that it all works (HINT, Google Chrome's history should be empty).
