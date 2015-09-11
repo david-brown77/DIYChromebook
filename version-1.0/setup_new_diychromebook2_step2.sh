@@ -39,5 +39,5 @@ update-rc.d googleuser_cleanup defaults
 mkdir -p /home/googleuser/.config/lxsession/Lubuntu
 chown googleuser:googleuser /home/googleuser/.config/lxsession
 chown googleuser:googleuser /home/googleuser/.config/lxsession/Lubuntu
-echo "/usr/bin/google-chrome-stable" >> /home/googleuser/.config/lxsession/Lubuntu/autostart
+echo "/usr/bin/chromium-browser" >> /home/googleuser/.config/lxsession/Lubuntu/autostart
 #
