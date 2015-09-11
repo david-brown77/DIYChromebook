@@ -31,11 +31,12 @@ mkdir -p /home/googleuser/.googleuser-aging/logs
 # setup cleanup googleuser user  logout
 echo "" >> /usr/share/lightdm/lightdm.conf.d/50-user-session.conf
 echo "#added by DIYChromebook (v2) script" >> /usr/share/lightdm/lightdm.conf.d/50-user-session.conf
-echo "session-cleanup-script=/home/System/scripts/googleuser_cleanup.sh" >> /usr/share/lightdm/lightdm.conf.d/50-user-session.conf
+echo "session-cleanup-script = /home/System/scripts/googleuser_cleanup.sh" >> /usr/share/lightdm/lightdm.conf.d/50-user-session.conf
+echo "session-setup-script = /home/System/scripts/googleuser_cleanup.sh" >> /usr/share/lightdm/lightdm.conf.d/50-user-session.conf
 echo "" >> /etc/lightdm/lightdm-gtk-greeter.conf
 echo "#added by DIYChromebook (v2) script" >> /etc/lightdm/lightdm-gtk-greeter.conf
-echo "session-cleanup-script=/home/System/scripts/googleuser_cleanup.sh" >> /etc/lightdm/lightdm-gtk-greeter.conf
-echo "session-setup-script=/home/System/scripts/googleuser_cleanup.sh" >> /etc/lightdm/lightdm-gtk-greeter.conf
+echo "session-cleanup-script = /home/System/scripts/googleuser_cleanup.sh" >> /etc/lightdm/lightdm-gtk-greeter.conf
+echo "session-setup-script = /home/System/scripts/googleuser_cleanup.sh" >> /etc/lightdm/lightdm-gtk-greeter.conf
 #
 # set googleuser_cleanup.sh be run at startup, in case hard power down.
 echo "#! /bin/bash" >> /etc/init.d/googleuser_cleanup
