@@ -62,5 +62,5 @@
   2. uncomment node at bottom that is <maximized>, include <application type="normal">
 13. Logout & remove network cable.  
 14. Login as sscpslocal & connect to WiFi SSIDs.  Be sure they are set as "System".
-15. Goto https://localhost:10000, login as sscpslocal & update webmin.
+15. Goto https://localhost:10000, login as sscpslocal & refresh modules (webmin should be up to date from apt-get).
 16. Reboot & check that it all works (HINT, Google Chrome's history should be empty).
