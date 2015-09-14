@@ -56,7 +56,8 @@
   2. Tools -> "Open Current Folder in Terminal".
   3. In terminal window, type "su sscpslocal".
   4. In terminal window, type "sudo -s".
-  5. /home/System/scripts/setup_new_diychromebook2_step2.sh
+  5. You probably forgot or didn't read to change googluser password, so do it now.
+  6. /home/System/scripts/setup_new_diychromebook2_step2.sh
 12. Fix up new windows:
   1. nano -w /home/googleuser/.config/openbox/lubuntu-rc.xml
   2. uncomment node at bottom that is <maximized>, include <application type="normal">
