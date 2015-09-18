@@ -1,0 +1,5 @@
+{
+  "RestrictSigninToPattern": [""],
+  "ForceMaximizeOnFirstRun": true,
+  "ForceEphemeralProfiles": true
+}
